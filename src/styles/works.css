@@ -1,0 +1,48 @@
+/* ブログ記事一覧ページ */
+.bloglist .container {
+	max-width: 1000px;
+}
+
+.bloglist .posts {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* ブログ記事一覧 */
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.posts article {
+	width: 48%;
+	margin-bottom: 20px;
+}
+
+.posts figure {
+	max-height: 100%;
+	height: 150px;
+
+}
+
+.posts img {
+	object-fit: cover;
+}
+
+.posts h3 {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+@media (min-width: 768px) {
+	.posts h3 {
+		font-size: 16px;
+	}
+
+	.posts figure {
+		height: 200px;
+	}
+}
